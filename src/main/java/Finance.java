@@ -34,7 +34,7 @@ public class Finance {
                 BestLoanRates.main(arguments);
                 return;
             case SAVINGS_CALCULATOR:
-                System.out.println("Finding your net savings...");
+                System.out.println("Finding your net savings ...");
                 SavingsCalculator.main(arguments);
                 return;
             case MORTGAGE_CALCULATOR:
@@ -55,7 +55,7 @@ public class Finance {
             commandsToUsage.get(args[0]);
             return;
         }
-        executeCommand(command, Arrays.copyOfRange(args, args.length));
+        executeCommand(command, Arrays.copyOfRange(args, 1, args.length));
     }
 
 }
