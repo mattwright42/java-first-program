@@ -14,15 +14,15 @@ public class SavingsCalculator
 
     private float sumOfCredits() {
         float sum = 0.0f;
-        for (float i : credits)
-            sum += i;
+        for (float credit : credits)
+            sum += credit;
         return sum;
     }
 
     private float sumOfDebits() {
         float sum = 0.0f;
-        for (float i : debits)
-            sum += 1;
+        for (float debit : debits)
+            sum += debit;
         return sum;
     }
 
