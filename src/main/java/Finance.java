@@ -15,7 +15,7 @@ public class Finance {
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>"
     );
 
-    private static Boolean validateCommandArguments(String[] args) {
+    private static boolean validateCommandArguments(String[] args) {
         switch (args[0]) {
             case BEST_LOAN_RATES:
                 return (args.length == 1);
@@ -38,7 +38,7 @@ public class Finance {
                 SavingsCalculator.main(arguments);
                 return;
             case MORTGAGE_CALCULATOR:
-                System.out.println("Finding your monthly payment...");
+                System.out.println("Finding your monthly payment ...");
                 MortgageCalculator.main(arguments);
                 return;
         }
