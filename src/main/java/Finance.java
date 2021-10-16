@@ -30,7 +30,7 @@ public class Finance {
     private static void executeCommand(String command, String[] arguments) {
         switch (command) {
             case BEST_LOAN_RATES:
-                System.out.println("Finding the best loan rates ...");
+                System.out.println("Finding best loan rates ...");
                 BestLoanRates.main(arguments);
                 return;
             case SAVINGS_CALCULATOR:
@@ -52,7 +52,7 @@ public class Finance {
         }
         boolean isValidCommand = validateCommandArguments(args);
         if (isValidCommand != true) {
-            commandsToUsage.get(args[0]);
+            System.out.println(commandsToUsage.get(args[0]));
             return;
         }
         executeCommand(command, Arrays.copyOfRange(args, 1, args.length));
